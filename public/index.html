@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <h1 class="logo">Ana's Notes</h1>
+      </header>
+
+      <main class="layout">
+        <section class="panel editor-panel" aria-labelledby="editor-heading">
+          <h2 id="editor-heading" class="panel-title">
+            <span id="editor-mode-label">New note</span>
+          </h2>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+          <form id="note-form" class="note-form" novalidate>
+            <input type="hidden" id="editing-id" value="" />
+            <label class="field">
+              <span class="field-label">Title</span>
+              <input
+                type="text"
+                id="note-title"
+                name="title"
+                maxlength="200"
+                required
+                autocomplete="off"
+                placeholder="e.g. Meeting ideas"
+              />
+            </label>
+            <label class="field">
+              <span class="field-label">Content</span>
+              <textarea
+                id="note-content"
+                name="content"
+                rows="8"
+                maxlength="20000"
+                placeholder="Write your note..."
+              ></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary" id="submit-btn">Save note</button>
+              <button type="button" class="btn ghost" id="cancel-edit" hidden>
+                Cancel edit
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel list-panel" aria-labelledby="list-heading">
+          <h2 id="list-heading" class="panel-title">My notes</h2>
+          <p id="list-empty" class="list-empty" hidden>No notes yet.</p>
+          <ul id="notes-list" class="notes-list"></ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>By Ana Jardim</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
