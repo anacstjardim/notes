@@ -1,0 +1,19 @@
+Technical Functionality	
+Full CRUD works; Express serves static & API; persistent notes storage; deployed and fully functional on Render
+
+Full-Stack Integration	
+Seamless frontend-backend integration; proper API usage; error handling; stable app structure
+
+Setup & Environment	
+Clean package.json; dependencies installable; .gitignore included; well-organized file structure
+
+README & Documentation	
+Clear and complete README with features, setup, and deployment links; GitHub is organized
+
+Code Quality & Maintainability	
+Code is clean, modular, commented, and bug-free; consistent naming and formatting
+
+Version Control & Submission	
+Frequent, meaningful commits; well-maintained repo; final submission complete
+
+
